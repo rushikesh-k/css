@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.text-wrapper {
+  text-align: center;
+}
+
+#box1 {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(breakfast.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+#box2 {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(breakfast_2.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+#box3 {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(breakfast_3.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  color: white;
+  padding: 4rem 6rem;
+  background-color: hsla(201, 100%, 6%, 0.6);
+}
