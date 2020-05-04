@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #151515;
+  margin: 0;
+}
+
+body.light {
+  background-color: rgb(211, 211, 211);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(26px);
+}
+
+.label {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  border-radius: 50px;
+  height: 24px;
+  width: 50px;
+  position: relative;
+}
+
+.fa-moon {
+  color: black;
+  margin-right: 4px;
+}
+
+.fa-sun {
+  color: black;
+  margin-left: 4px;
+}
+
+.ball {
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  transition: transform 0.2s linear;
+}
