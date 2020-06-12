@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #151515;
+  margin: 0;
+}
+
+a {
+  line-height: inherit;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------
+ * ## intro social
+ * ------------------------------------------------------------------- */
+
+.intro-social {
+  z-index: 2;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.6rem;
+  margin: 0;
+  padding-bottom: 9.6rem;
+  text-align: center;
+  position: absolute;
+  right: 8rem;
+  bottom: 0;
+}
+
+.intro-social a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.intro-social a:hover,
+.intro-social a:focus,
+.intro-social a:active {
+  color: #ffffff;
+}
+
+.intro-social li {
+  padding-left: 0;
+  margin-bottom: 1.6rem;
+}
+
+.intro-social li:last-child {
+  margin-bottom: 0;
+}
+
+.intro-social::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 7.8rem;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  bottom: 0;
+}
+
+/* -------------------------------------------------------------------
+ * ## intro scroll
+ * ------------------------------------------------------------------- */
+.intro-scroll {
+  z-index: 2;
+  line-height: 12px;
+  position: absolute;
+  left: 8rem;
+  bottom: 0;
+  -webkit-transform: rotate(-90deg) translate3d(0, 100%, 0);
+  transform: rotate(-90deg) translate3d(0, 100%, 0);
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.intro-scroll .scroll-link {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.4);
+  padding-left: 9.6rem;
+  margin: 0;
+  position: relative;
+}
+
+.intro-scroll .scroll-link:hover,
+.intro-scroll .scroll-link:focus {
+  color: #ffffff;
+}
+
+.intro-scroll::before {
+  display: block;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 7.8rem;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
